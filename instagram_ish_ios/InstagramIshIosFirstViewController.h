@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InstagramIshIosFirstViewController : UIViewController
+@interface InstagramIshIosFirstViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 

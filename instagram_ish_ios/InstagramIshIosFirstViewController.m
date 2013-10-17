@@ -9,20 +9,19 @@
 #import "InstagramIshIosFirstViewController.h"
 
 @interface InstagramIshIosFirstViewController ()
-@property (strong, nonatomic) IBOutlet UIButton *takePhoto;
-@property (strong, nonatomic) IBOutlet UIButton *selectPhoto;
+
 @end
 
 @implementation InstagramIshIosFirstViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         
-        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Device Error"
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
                                                               message:@"Device has no camera"
                                                              delegate:nil
                                                     cancelButtonTitle:@"OK"
@@ -31,19 +30,19 @@
         [myAlertView show];
         
     }
-
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
 }
 
 - (IBAction)takePhoto:(UIButton *)sender {
     
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-//    picker.delegate = self;
+    picker.delegate = self;
     picker.allowsEditing = YES;
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     
@@ -52,12 +51,15 @@
 }
 
 - (IBAction)selectPhoto:(UIButton *)sender {
+    
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-//    picker.delegate = self;
+    picker.delegate = self;
     picker.allowsEditing = YES;
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-
+    
     [self presentViewController:picker animated:YES completion:NULL];
+    
+    
 }
 
 #pragma mark - Image Picker Controller delegate methods
