@@ -48,12 +48,13 @@
                                 <rect key="frame" x="0.0" y="40" width="320" height="327"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="380" id="XkP-HE-TrX"/>
                                     <constraint firstAttribute="height" constant="327" id="Zub-mf-cWi"/>
                                     <constraint firstAttribute="width" constant="320" id="rmZ-It-504"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2fR-3P-DB9" secondAttribute="trailing" id="5kz-9m-joO"/>
                             <constraint firstItem="qLF-5o-F8i" firstAttribute="top" secondItem="2fR-3P-DB9" secondAttribute="bottom" constant="15" id="EyU-lX-cOg"/>
@@ -63,7 +64,7 @@
                             <constraint firstItem="qLF-5o-F8i" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" constant="40" id="xRh-HF-WJ2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" image="first" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="" image="first" id="u1e-5L-l1D"/>
                     <connections>
                         <outlet property="imageView" destination="2fR-3P-DB9" id="VMB-ak-qBP"/>
                     </connections>
@@ -223,7 +224,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2Y8-IT-mYF" firstAttribute="centerX" secondItem="KvW-pl-Zfi" secondAttribute="centerX" id="Gal-pG-QTF"/>
                             <constraint firstItem="2Y8-IT-mYF" firstAttribute="leading" secondItem="gMD-aP-Fq6" secondAttribute="leading" id="Hby-Za-iSg"/>
@@ -232,7 +233,7 @@
                             <constraint firstAttribute="trailing" secondItem="2Y8-IT-mYF" secondAttribute="trailing" id="aHX-Br-1vI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gallery" image="second" id="Z7h-1E-pvt"/>
+                    <tabBarItem key="tabBarItem" title="" image="second" id="Z7h-1E-pvt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
@@ -259,7 +260,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="first" width="60" height="60"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
