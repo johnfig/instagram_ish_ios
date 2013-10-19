@@ -9,10 +9,12 @@
 #import "InstagramIshIosFirstViewController.h"
 
 @interface InstagramIshIosFirstViewController ()
-
+    
 @end
 
 @implementation InstagramIshIosFirstViewController
+
+@synthesize imageView;
 
 - (void)viewDidLoad {
     
@@ -33,11 +35,38 @@
     
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    
-    [super viewDidAppear:animated];
-    
+#pragma mark - Live Camera Feed
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	
+	//----- SHOW LIVE CAMERA PREVIEW -----
+	AVCaptureSession *session = [[AVCaptureSession alloc] init];
+	session.sessionPreset = AVCaptureSessionPresetMedium;
+	
+	CALayer *viewLayer = self.imageView.layer;
+	NSLog(@"viewLayer = %@", viewLayer);
+	
+	AVCaptureVideoPreviewLayer *captureVideoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:session];
+	
+	captureVideoPreviewLayer.frame = self.imageView.bounds;
+	[self.imageView.layer addSublayer:captureVideoPreviewLayer];
+	
+	AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+	
+	NSError *error = nil;
+	AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:device error:&error];
+	if (!input) {
+		// Handle the error appropriately.
+		NSLog(@"ERROR: trying to open camera: %@", error);
+	}
+	[session addInput:input];
+	
+	[session startRunning];
 }
+
+#pragma mark - Taking and Selecting Images
 
 - (IBAction)takePhoto:(UIButton *)sender {
     
@@ -58,7 +87,6 @@
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     
     [self presentViewController:picker animated:YES completion:NULL];
-    
     
 }
 

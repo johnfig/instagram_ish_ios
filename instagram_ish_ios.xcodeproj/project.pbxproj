@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F0481DEB16446CABD81FCA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F16B44CD6FA54DD0A6FA5FB3 /* libPods.a */; };
+		5C3024A71812022F0098A3ED /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3024A61812022F0098A3ED /* Images-2.xcassets */; };
 		5CC6E7451804617A008F8CDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC6E7441804617A008F8CDB /* Foundation.framework */; };
 		5CC6E7471804617A008F8CDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC6E7461804617A008F8CDB /* CoreGraphics.framework */; };
 		5CC6E7491804617A008F8CDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC6E7481804617A008F8CDB /* UIKit.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C3024A61812022F0098A3ED /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		5CC6E7411804617A008F8CDB /* instagram_ish_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram_ish_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC6E7441804617A008F8CDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5CC6E7461804617A008F8CDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,6 +131,7 @@
 				5CC6E75C1804617A008F8CDB /* InstagramIshIosSecondViewController.h */,
 				5CC6E75D1804617A008F8CDB /* InstagramIshIosSecondViewController.m */,
 				5CC6E75F1804617A008F8CDB /* Images.xcassets */,
+				5C3024A61812022F0098A3ED /* Images-2.xcassets */,
 				5CC6E74B1804617A008F8CDB /* Supporting Files */,
 			);
 			path = instagram_ish_ios;
@@ -243,6 +246,7 @@
 			files = (
 				5CC6E7601804617A008F8CDB /* Images.xcassets in Resources */,
 				5CC6E74F1804617A008F8CDB /* InfoPlist.strings in Resources */,
+				5C3024A71812022F0098A3ED /* Images-2.xcassets in Resources */,
 				5CC6E7581804617A008F8CDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
