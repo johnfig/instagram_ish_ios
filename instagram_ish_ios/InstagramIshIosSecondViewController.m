@@ -9,22 +9,22 @@
 #import "InstagramIshIosSecondViewController.h"
 
 @interface InstagramIshIosSecondViewController ()
-@property(strong, nonatomic) IBOutlet UIButton *getGalleryRequest;
-@property (strong, nonatomic) NSMutableData *responseData;
-@property (strong, nonatomic) IBOutlet UIImageView *singleImageView;
-@property (strong, nonatomic) IBOutlet UICollectionViewCell *myPhoto;
+
 @end
 
 @implementation InstagramIshIosSecondViewController
 
-@synthesize responseData = _responseData;
+@synthesize responseData;
 @synthesize singleImageView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    singleImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://s3-us-west-2.amazonaws.com/instagram-ish/app/public/assets/products/2/original/968832_10100965984660906_78147130_n_(1).jpg?1381165534"]]];
+    if (singleImageView) {
+        singleImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://s3-us-west-2.amazonaws.com/instagram-ish/app/public/assets/products/2/original/968832_10100965984660906_78147130_n_(1).jpg?1381165534"]]];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,7 +77,6 @@
         NSString *icon = [result objectForKey:@"icon"];
         NSLog(@"icon: %@", icon);
     }
-    
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
