@@ -15,16 +15,11 @@
 @implementation InstagramIshIosSecondViewController
 
 @synthesize responseData;
-@synthesize singleImageView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    if (singleImageView) {
-        singleImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://s3-us-west-2.amazonaws.com/instagram-ish/app/public/assets/products/2/original/968832_10100965984660906_78147130_n_(1).jpg?1381165534"]]];
-    }
-    
+	// Do any additional setup after loading the view, typically from a nib
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,7 +32,7 @@
     NSLog(@"viewdidload");
     self.responseData = [NSMutableData data];
     NSURLRequest *request = [NSURLRequest requestWithURL:
-                             [NSURL URLWithString:@"https://instagramish.herokuapp.com/photos_api/2.json"]];
+                             [NSURL URLWithString:@"https://instagramish.herokuapp.com/photos_api.json"]];
     [[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
 
@@ -58,25 +53,42 @@
     NSError *myError = nil;
     NSDictionary *res = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingMutableLeaves error:&myError];
     
-    // show all values
-    for(id key in res) {
-        
-        id value = [res objectForKey:key];
-        
-        NSString *keyAsString = (NSString *)key;
-        NSString *valueAsString = (NSString *)value;
-        
-        NSLog(@"key: %@", keyAsString);
-        NSLog(@"value: %@", valueAsString);
-    }
+    NSLog(@"results: %@", res);
     
-    // extract specific value...
-    NSArray *results = [res objectForKey:@"results"];
+//    for(id key in res) {
+//        id value = [res objectForKey:key];
+//        
+//        NSString *keyAsString = (NSString *)key;
+//        NSString *valueAsString = (NSString *)value;
+//        
+//        if (keyAsString]) {
+//            NSLog(@"key: %@", keyAsString);
+//            NSLog(@"value: %@", valueAsString); }
+//        else {
+//            NSLog(@"Hello World");
+//            }
+//        }
+//    }
     
-    for (NSDictionary *result in results) {
-        NSString *icon = [result objectForKey:@"icon"];
-        NSLog(@"icon: %@", icon);
-    }
+//    // show all values
+//    for(id key in res) {
+//        
+//        id value = [res objectForKey:key];
+//        
+//        NSString *keyAsString = (NSString *)key;
+//        NSString *valueAsString = (NSString *)value;
+//        
+//        NSLog(@"key: %@", keyAsString);
+//        NSLog(@"value: %@", valueAsString);
+//    }
+//    
+//    // extract specific value...
+//    NSArray *results = [res objectForKey:@"results"];
+//    
+//    for (NSDictionary *result in results) {
+//        NSString *icon = [result objectForKey:@"icon"];
+//        NSLog(@"icon: %@", icon);
+//    }
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
