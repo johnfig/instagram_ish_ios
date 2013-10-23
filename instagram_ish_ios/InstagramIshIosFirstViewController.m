@@ -49,6 +49,7 @@
 	NSLog(@"viewLayer = %@", viewLayer);
 	
 	AVCaptureVideoPreviewLayer *captureVideoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:session];
+    [captureVideoPreviewLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
 	
 	captureVideoPreviewLayer.frame = self.imageView.bounds;
 	[self.imageView.layer addSublayer:captureVideoPreviewLayer];
