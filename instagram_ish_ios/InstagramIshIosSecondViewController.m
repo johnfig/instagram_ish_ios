@@ -37,7 +37,7 @@
     NSLog(@"viewdidload");
     self.responseData = [NSMutableData data];
     NSURLRequest *request = [NSURLRequest requestWithURL:
-                             [NSURL URLWithString:@"https://instagramish.herokuapp.com/photos_api/2.json"]];
+                             [NSURL URLWithString:@"https://instagramish.herokuapp.com/photos_api.json"]];
     [[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
 
@@ -58,25 +58,27 @@
     NSError *myError = nil;
     NSDictionary *res = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingMutableLeaves error:&myError];
     
-    // show all values
-    for(id key in res) {
-        
-        id value = [res objectForKey:key];
-        
-        NSString *keyAsString = (NSString *)key;
-        NSString *valueAsString = (NSString *)value;
-        
-        NSLog(@"key: %@", keyAsString);
-        NSLog(@"value: %@", valueAsString);
-    }
+    NSLog(@"Photo Hash: %@", res);
     
-    // extract specific value...
-    NSArray *results = [res objectForKey:@"results"];
-    
-    for (NSDictionary *result in results) {
-        NSString *icon = [result objectForKey:@"icon"];
-        NSLog(@"icon: %@", icon);
-    }
+//    // show all values
+//    for(id key in res) {
+//        
+//        id value = [res objectForKey:key];
+//        
+//        NSString *keyAsString = (NSString *)key;
+//        NSString *valueAsString = (NSString *)value;
+//        
+//        NSLog(@"key: %@", keyAsString);
+//        NSLog(@"value: %@", valueAsString);
+//    }
+//    
+//    // extract specific value...
+//    NSArray *results = [res objectForKey:@"results"];
+//    
+//    for (NSDictionary *result in results) {
+//        NSString *icon = [result objectForKey:@"icon"];
+//        NSLog(@"icon: %@", icon);
+//    }
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
