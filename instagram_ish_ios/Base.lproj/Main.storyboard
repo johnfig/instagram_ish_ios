@@ -105,7 +105,7 @@
                                     <segue destination="RQ5-ia-FDK" kind="modal" id="HDU-JM-hMI"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="3SF-sR-khZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boat" translatesAutoresizingMaskIntoConstraints="NO" id="3SF-sR-khZ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -555,7 +555,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="320" height="400"/>
+        <image name="boat" width="320" height="316"/>
         <image name="first" width="45" height="45"/>
         <image name="profile" width="80" height="80"/>
         <image name="second" width="35" height="35"/>
