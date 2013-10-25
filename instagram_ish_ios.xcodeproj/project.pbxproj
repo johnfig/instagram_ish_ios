@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4F0481DEB16446CABD81FCA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F16B44CD6FA54DD0A6FA5FB3 /* libPods.a */; };
 		5C3024A71812022F0098A3ED /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3024A61812022F0098A3ED /* Images-2.xcassets */; };
+		5C7E8C77181A204C006EC134 /* LoginPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E8C76181A204C006EC134 /* LoginPhoneViewController.m */; };
+		5C8800121819B65400C7B56B /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8800111819B65400C7B56B /* SignUpViewController.m */; };
+		5C88001E181A01D100C7B56B /* SignUpPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C88001D181A01D100C7B56B /* SignUpPhoneViewController.m */; };
 		5CC6E7451804617A008F8CDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC6E7441804617A008F8CDB /* Foundation.framework */; };
 		5CC6E7471804617A008F8CDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC6E7461804617A008F8CDB /* CoreGraphics.framework */; };
 		5CC6E7491804617A008F8CDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC6E7481804617A008F8CDB /* UIKit.framework */; };
@@ -38,6 +41,12 @@
 
 /* Begin PBXFileReference section */
 		5C3024A61812022F0098A3ED /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		5C7E8C75181A204C006EC134 /* LoginPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPhoneViewController.h; sourceTree = "<group>"; };
+		5C7E8C76181A204C006EC134 /* LoginPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPhoneViewController.m; sourceTree = "<group>"; };
+		5C8800101819B65400C7B56B /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		5C8800111819B65400C7B56B /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		5C88001C181A01D100C7B56B /* SignUpPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpPhoneViewController.h; sourceTree = "<group>"; };
+		5C88001D181A01D100C7B56B /* SignUpPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpPhoneViewController.m; sourceTree = "<group>"; };
 		5CC6E7411804617A008F8CDB /* instagram_ish_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram_ish_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC6E7441804617A008F8CDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5CC6E7461804617A008F8CDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +132,12 @@
 		5CC6E74A1804617A008F8CDB /* instagram_ish_ios */ = {
 			isa = PBXGroup;
 			children = (
+				5C7E8C75181A204C006EC134 /* LoginPhoneViewController.h */,
+				5C7E8C76181A204C006EC134 /* LoginPhoneViewController.m */,
+				5C88001C181A01D100C7B56B /* SignUpPhoneViewController.h */,
+				5C88001D181A01D100C7B56B /* SignUpPhoneViewController.m */,
+				5C8800101819B65400C7B56B /* SignUpViewController.h */,
+				5C8800111819B65400C7B56B /* SignUpViewController.m */,
 				5CC6E7531804617A008F8CDB /* InstagramIshIosAppDelegate.h */,
 				5CC6E7541804617A008F8CDB /* InstagramIshIosAppDelegate.m */,
 				5CC6E7561804617A008F8CDB /* Main.storyboard */,
@@ -300,6 +315,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC6E75E1804617A008F8CDB /* InstagramIshIosSecondViewController.m in Sources */,
+				5C88001E181A01D100C7B56B /* SignUpPhoneViewController.m in Sources */,
+				5C7E8C77181A204C006EC134 /* LoginPhoneViewController.m in Sources */,
+				5C8800121819B65400C7B56B /* SignUpViewController.m in Sources */,
 				5CC6E75B1804617A008F8CDB /* InstagramIshIosFirstViewController.m in Sources */,
 				5CC6E7551804617A008F8CDB /* InstagramIshIosAppDelegate.m in Sources */,
 				5CC6E7511804617A008F8CDB /* main.m in Sources */,
