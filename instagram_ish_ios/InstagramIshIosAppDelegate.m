@@ -13,6 +13,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //    set status bar color
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    //    set background image
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav-bar-background"] forBarMetrics:UIBarMetricsDefault];
+    //    set nav bar title text color, font, and size
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, [UIFont fontWithName:@"FontNAme" size:24], NSFontAttributeName, nil]];
     return YES;
 }
 							

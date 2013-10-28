@@ -7,6 +7,7 @@
 //
 
 #import "LoginPhoneViewController.h"
+#import "SVProgressHUD.h"
 
 @interface LoginPhoneViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
@@ -27,9 +28,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.titleView.backgroundColor = [UIColor whiteColor];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (IBAction)loginValidation:(id)sender {
-    NSLog(@"Login Hello World");
+    [SVProgressHUD showSuccessWithStatus:@"Success!"];
 }
 @end

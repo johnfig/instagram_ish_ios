@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "boat_wallpaper.png"
+      "filename" : "nav-bar-background.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "boat_wallpaper@2x.png"
+      "filename" : "nav-bar-background-1.png"
     }
   ],
   "info" : {

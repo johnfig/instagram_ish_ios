@@ -7,6 +7,7 @@
 //
 
 #import "SignUpPhoneViewController.h"
+#import "SVProgressHUD.h"
 
 @interface SignUpPhoneViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
@@ -29,10 +30,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                               [UIColor whiteColor],UITextAttributeTextColor, nil];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
 }
 
 - (IBAction)signUpValidation:(id)sender {
-    NSLog(@"Hello World");
+    [SVProgressHUD showSuccessWithStatus:@"Success!"];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 @end

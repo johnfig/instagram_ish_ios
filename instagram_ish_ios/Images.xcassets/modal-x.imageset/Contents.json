@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "boat_wallpaper.png"
+      "filename" : "modal-x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "boat_wallpaper@2x.png"
+      "filename" : "modal-x@2x.png"
     }
   ],
   "info" : {
