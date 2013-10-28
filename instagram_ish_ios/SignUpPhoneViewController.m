@@ -30,10 +30,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                               [UIColor whiteColor],UITextAttributeTextColor, nil];
-    
-    [[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
 }
 
 - (IBAction)signUpValidation:(id)sender {

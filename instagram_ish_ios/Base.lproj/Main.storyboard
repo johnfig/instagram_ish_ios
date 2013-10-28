@@ -327,7 +327,6 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="emailTextField" destination="FPX-D0-zvc" id="roN-vD-xY5"/>
                         <outlet property="passwordTextField" destination="iPc-l9-Fsd" id="LAn-1F-Zbc"/>
@@ -342,7 +341,6 @@
         <scene sceneID="e5s-AO-tK9">
             <objects>
                 <navigationController definesPresentationContext="YES" id="UGy-ex-Xkv" sceneMemberID="viewController">
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aR6-Ub-AfZ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -536,7 +534,6 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="emailTextField" destination="dBc-8q-cEk" id="YbT-ki-Xq3"/>
                         <outlet property="firstNameTextField" destination="SGN-dm-tee" id="0ON-DG-ge4"/>
@@ -553,7 +550,6 @@
         <scene sceneID="SKX-VR-krM">
             <objects>
                 <navigationController definesPresentationContext="YES" id="RQ5-ia-FDK" sceneMemberID="viewController">
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="meS-Ug-tId">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -26,10 +26,6 @@
 
 - (IBAction) unwindToHomeScreen:(UIStoryboardSegue*)segue { }
 
--(UIStatusBarStyle)preferredStatusBarStyle{
-return UIStatusBarStyleLightContent;
-}
-
 - (void)setupBlurredImage
 {
     UIImage *theImage = [UIImage imageNamed:@"boat.png"];
