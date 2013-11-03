@@ -37,5 +37,6 @@
 
 - (IBAction)loginValidation:(id)sender {
     [SVProgressHUD showSuccessWithStatus:@"Success!"];
+    [self performSegueWithIdentifier:@"moveToHomeScreen" sender:self];
 }
 @end

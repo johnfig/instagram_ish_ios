@@ -34,6 +34,7 @@
 
 - (IBAction)signUpValidation:(id)sender {
     [SVProgressHUD showSuccessWithStatus:@"Success!"];
+    [self performSegueWithIdentifier:@"moveToHomeScreen" sender:self];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{

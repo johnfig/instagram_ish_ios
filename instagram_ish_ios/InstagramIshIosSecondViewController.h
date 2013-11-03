@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface InstagramIshIosSecondViewController : UIViewController
-@property(strong, nonatomic) IBOutlet UIButton *getGalleryRequest;
+@property (strong, nonatomic) IBOutlet UIButton *getGalleryRequest;
 @property (strong, nonatomic) NSMutableData *responseData;
 @property (strong, nonatomic) IBOutlet UIImageView *singleImageView;
 @end
