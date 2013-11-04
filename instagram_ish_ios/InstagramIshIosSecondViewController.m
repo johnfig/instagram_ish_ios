@@ -21,9 +21,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    if (singleImageView) {
-        singleImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://s3-us-west-2.amazonaws.com/instagram-ish/app/public/assets/products/2/original/968832_10100965984660906_78147130_n_(1).jpg?1381165534"]]];
-    }
+    
+//    deprecated, but want to use for reference on how to upload UIImage in collection view
+//    if (singleImageView) {
+//        singleImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://s3-us-west-2.amazonaws.com/instagram-ish/app/public/assets/products/2/original/968832_10100965984660906_78147130_n_(1).jpg?1381165534"]]];
+//    }
     
 }
 
