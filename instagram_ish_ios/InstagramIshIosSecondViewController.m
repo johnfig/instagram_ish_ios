@@ -9,30 +9,25 @@
 #import "InstagramIshIosSecondViewController.h"
 
 @interface InstagramIshIosSecondViewController ()
-
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UICollectionViewCell *collectionViewCell;
+@property (weak, nonatomic) IBOutlet UIImageView *singleImage;
 @end
 
 @implementation InstagramIshIosSecondViewController
 
 @synthesize responseData;
-@synthesize singleImageView;
+@synthesize singleImage;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-//    deprecated, but want to use for reference on how to upload UIImage in collection view
-//    if (singleImageView) {
-//        singleImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://s3-us-west-2.amazonaws.com/instagram-ish/app/public/assets/products/2/original/968832_10100965984660906_78147130_n_(1).jpg?1381165534"]]];
-//    }
-    
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"collectionViewCell"];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)getGalleryRequest:(id)sender {
@@ -62,6 +57,23 @@
     
     NSLog(@"Photo Hash: %@", res);
     
+    for (id key in res) {
+//        This is where collectionViewImage will be set
+        NSLog(@"name: %@, photo: %@", key[@"name"], key[@"photo"]);
+        if (singleImage) {
+            singleImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:key[@"photo"]]]];
+         };
+    };
+    
+    
+//    __block NSUInteger selectedIndex = 0;
+//    [res[0] enumerateObjectsUsingBlock:^(NSDictionary *res, NSUInteger idx, BOOL *stop) {
+//        if ([res isEqualToString:@"photo"]) {
+//            NSLog(@"%@: %@", res, obj);
+//        }
+//
+//    }];
+
 //    // show all values
 //    for(id key in res) {
 //        
@@ -73,7 +85,7 @@
 //        NSLog(@"key: %@", keyAsString);
 //        NSLog(@"value: %@", valueAsString);
 //    }
-//    
+//
 //    // extract specific value...
 //    NSArray *results = [res objectForKey:@"results"];
 //    

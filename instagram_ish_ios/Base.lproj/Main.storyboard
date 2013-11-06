@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="5CM-A9-Eoj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QUy-BD-bpt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
@@ -181,28 +181,24 @@
                                     <action selector="getGalleryRequest:" destination="QUy-BD-bpt" eventType="touchUpInside" id="B6g-bA-Qcn"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WZT-0S-1FD">
-                                <rect key="frame" x="0.0" y="101" width="320" height="331"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-AP-F0t">
+                                <rect key="frame" x="110" y="190" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="331" id="tVW-X3-dZH"/>
-                                    <constraint firstAttribute="height" constant="331" id="yNI-xh-emD"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="WZT-0S-1FD" firstAttribute="leading" secondItem="gMD-aP-Fq6" secondAttribute="leading" id="1mL-ny-4kM"/>
+                            <constraint firstItem="ibt-AP-F0t" firstAttribute="trailing" secondItem="KvW-pl-Zfi" secondAttribute="trailing" id="3kV-qq-kKP"/>
                             <constraint firstItem="KvW-pl-Zfi" firstAttribute="leading" secondItem="gMD-aP-Fq6" secondAttribute="leading" constant="110" id="4zN-jb-zam"/>
-                            <constraint firstAttribute="bottom" secondItem="WZT-0S-1FD" secondAttribute="bottom" constant="48" id="8If-7W-dnY"/>
+                            <constraint firstItem="ibt-AP-F0t" firstAttribute="centerY" secondItem="gMD-aP-Fq6" secondAttribute="centerY" id="BFE-m8-w8c"/>
+                            <constraint firstItem="ibt-AP-F0t" firstAttribute="leading" secondItem="KvW-pl-Zfi" secondAttribute="leading" id="FmZ-eI-1K3"/>
                             <constraint firstItem="KvW-pl-Zfi" firstAttribute="top" secondItem="6m8-EK-7nS" secondAttribute="bottom" constant="20" id="Wi8-Xn-s9n"/>
-                            <constraint firstItem="KvW-pl-Zfi" firstAttribute="centerX" secondItem="WZT-0S-1FD" secondAttribute="centerX" id="ZVB-LP-Kr7"/>
-                            <constraint firstItem="KvW-pl-Zfi" firstAttribute="centerX" secondItem="WZT-0S-1FD" secondAttribute="centerX" id="vaM-A7-opy"/>
+                            <constraint firstItem="BrN-32-2og" firstAttribute="top" secondItem="ibt-AP-F0t" secondAttribute="bottom" constant="141" id="huG-Nu-dt7"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="second" id="Z7h-1E-pvt"/>
                     <connections>
-                        <outlet property="singleImageView" destination="WZT-0S-1FD" id="8Px-pm-KVK"/>
+                        <outlet property="singleImage" destination="ibt-AP-F0t" id="0Ku-Yu-l5o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
