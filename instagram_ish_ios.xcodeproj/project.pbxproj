@@ -97,6 +97,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CBB85FE18679A84004632FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5CC6E7591804617A008F8CDB /* InstagramIshIosFirstViewController.h */,
+				5CC6E75A1804617A008F8CDB /* InstagramIshIosFirstViewController.m */,
+				5CC6E75C1804617A008F8CDB /* InstagramIshIosSecondViewController.h */,
+				5CC6E75D1804617A008F8CDB /* InstagramIshIosSecondViewController.m */,
+				5C7E8C75181A204C006EC134 /* LoginPhoneViewController.h */,
+				5C7E8C76181A204C006EC134 /* LoginPhoneViewController.m */,
+				5C88001C181A01D100C7B56B /* SignUpPhoneViewController.h */,
+				5C88001D181A01D100C7B56B /* SignUpPhoneViewController.m */,
+				5C8800101819B65400C7B56B /* SignUpViewController.h */,
+				5C8800111819B65400C7B56B /* SignUpViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		5CC6E7381804617A008F8CDB = {
 			isa = PBXGroup;
 			children = (
@@ -132,19 +149,10 @@
 		5CC6E74A1804617A008F8CDB /* instagram_ish_ios */ = {
 			isa = PBXGroup;
 			children = (
-				5C7E8C75181A204C006EC134 /* LoginPhoneViewController.h */,
-				5C7E8C76181A204C006EC134 /* LoginPhoneViewController.m */,
-				5C88001C181A01D100C7B56B /* SignUpPhoneViewController.h */,
-				5C88001D181A01D100C7B56B /* SignUpPhoneViewController.m */,
-				5C8800101819B65400C7B56B /* SignUpViewController.h */,
-				5C8800111819B65400C7B56B /* SignUpViewController.m */,
+				5CBB85FE18679A84004632FE /* Controllers */,
 				5CC6E7531804617A008F8CDB /* InstagramIshIosAppDelegate.h */,
 				5CC6E7541804617A008F8CDB /* InstagramIshIosAppDelegate.m */,
 				5CC6E7561804617A008F8CDB /* Main.storyboard */,
-				5CC6E7591804617A008F8CDB /* InstagramIshIosFirstViewController.h */,
-				5CC6E75A1804617A008F8CDB /* InstagramIshIosFirstViewController.m */,
-				5CC6E75C1804617A008F8CDB /* InstagramIshIosSecondViewController.h */,
-				5CC6E75D1804617A008F8CDB /* InstagramIshIosSecondViewController.m */,
 				5CC6E75F1804617A008F8CDB /* Images.xcassets */,
 				5C3024A61812022F0098A3ED /* Images-2.xcassets */,
 				5CC6E74B1804617A008F8CDB /* Supporting Files */,
